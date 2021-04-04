@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,11 +59,11 @@ public class MainActivity extends AppCompatActivity {
             case R.id.but0:
                 number += "0";
                 break;
-            case R.id.butDot:
+            case R.id.dot:
                 number += ".";
                 break;
-            case R.id.PlusMinus:
-                number = "-"+number;
+            case R.id.plusMinus:
+                number = "-" + number;
                 break;
         }
         ed1.setText(number);
@@ -71,32 +72,40 @@ public class MainActivity extends AppCompatActivity {
     public void operatorEvent(View view) {
         isNewOperator = true;
         oldNumber = ed1.getText().toString();
-        switch (view.getId()){
-            case R.id.Divide: operator = "/"; break;
-            case R.id.Multiply: operator = "*"; break;
-            case R.id.butPlus: operator = "+"; break;
-            case R.id.butMinus: operator = "-"; break;
+        switch (view.getId()) {
+            case R.id.divide:
+                operator = "/";
+                break;
+            case R.id.multiply:
+                operator = "*";
+                break;
+            case R.id.plus:
+                operator = "+";
+                break;
+            case R.id.minus:
+                operator = "-";
+                break;
         }
     }
 
     public void equalEvent(View view) {
         String newNumber = ed1.getText().toString();
         double result = 0.0;
-        switch (operator){
+        switch (operator) {
             case "+":
-                result = Double.parseDouble(oldNumber)+ Double.parseDouble(newNumber);
+                result = Double.parseDouble(oldNumber) + Double.parseDouble(newNumber);
                 break;
             case "-":
-                result = Double.parseDouble(oldNumber)- Double.parseDouble(newNumber);
+                result = Double.parseDouble(oldNumber) - Double.parseDouble(newNumber);
                 break;
             case "*":
-                result = Double.parseDouble(oldNumber)* Double.parseDouble(newNumber);
+                result = Double.parseDouble(oldNumber) * Double.parseDouble(newNumber);
                 break;
             case "/":
-                result = Double.parseDouble(oldNumber)/ Double.parseDouble(newNumber);
+                result = Double.parseDouble(oldNumber) / Double.parseDouble(newNumber);
                 break;
         }
-        ed1.setText(result+"");
+        ed1.setText(result + "");
     }
 
     public void acEvent(View view) {
@@ -106,8 +115,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void percentEvent(View view) {
-        double num = Double.parseDouble(ed1.getText().toString())/100;
-        ed1.setText(num+"");
+        double num = Double.parseDouble(ed1.getText().toString()) / 100;
+        ed1.setText(num + "");
         isNewOperator = true;
     }
 }
