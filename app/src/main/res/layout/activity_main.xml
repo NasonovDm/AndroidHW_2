@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.google.android.material.textfield.TextInputEditText
+    <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,9 +50,9 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/black"
-                        android:textColor="@color/black">
-
-                    </com.google.android.material.button.MaterialButton>
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
+                        android:textColor="@color/black"
+                        android:theme="@style/MatButton"></com.google.android.material.button.MaterialButton>
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/butac"
@@ -62,8 +62,10 @@
                         android:background="@color/black"
                         android:onClick="acEvent"
                         android:text="AC"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -75,8 +77,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="+/-"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton" />
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton" />
 
                     <com.google.android.material.button.MaterialButton
                         android:id="@+id/multiply"
@@ -86,8 +90,10 @@
                         android:background="@color/black"
                         android:onClick="operatorEvent"
                         android:text="×"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
                 </LinearLayout>
@@ -113,8 +119,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="7"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -126,8 +134,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="8"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -139,8 +149,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="9"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -152,8 +164,10 @@
                         android:background="@color/black"
                         android:onClick="operatorEvent"
                         android:text="÷"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
                 </LinearLayout>
@@ -179,8 +193,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="4"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -192,8 +208,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="5"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -205,8 +223,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="6"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -218,8 +238,10 @@
                         android:background="@color/black"
                         android:onClick="operatorEvent"
                         android:text="-"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
                 </LinearLayout>
@@ -245,8 +267,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="1"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -258,8 +282,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="2"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -271,8 +297,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="3"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -284,8 +312,10 @@
                         android:background="@color/black"
                         android:onClick="operatorEvent"
                         android:text="+"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
                 </LinearLayout>
@@ -309,7 +339,9 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:background="@color/black"
-                        android:textColor="@color/black">
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
+                        android:textColor="@color/black"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -321,8 +353,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="0"
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -334,8 +368,10 @@
                         android:background="@color/black"
                         android:onClick="numberEvent"
                         android:text="."
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/white"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
 
@@ -347,8 +383,10 @@
                         android:background="@color/black"
                         android:onClick="equalEvent"
                         android:text="="
+                        android:textAppearance="@style/Theme.MaterialComponents.Bridge"
                         android:textColor="@color/orange"
-                        android:textSize="@dimen/textSizeButton">
+                        android:textSize="@dimen/textSizeButton"
+                        android:theme="@style/MatButton">
 
                     </com.google.android.material.button.MaterialButton>
                 </LinearLayout>
